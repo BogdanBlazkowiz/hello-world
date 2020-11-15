@@ -1,6 +1,6 @@
 # hello-world
-A Place For Not So Important Apps
-This is a test, do not be alarmed.\n
-This is a test, do not be alarmed.\n
-This is a test, do not be alarmed.\n
-This is a test, do not be alarmed.\n
+A Place For Not So Important Apps  
+This is a test, do not be alarmed.  
+This is a test, do not be alarmed.  
+This is a test, do not be alarmed.  
+This is a test, do not be alarmed.  
