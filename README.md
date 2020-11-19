@@ -1,6 +1,3 @@
 # hello-world
 A Place For Not So Important Apps  
-This is a test, do not be alarmed.  
-This is a test, do not be alarmed.  
-This is a test, do not be alarmed.  
-This is a test, do not be alarmed.  
+Here are my smaller projects, the ones that don't need their own repositories.
