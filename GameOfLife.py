@@ -4,8 +4,9 @@ import sys
 
 size_block = 10
 width = 720
-height = width
-number_blocks = int(width/size_block)
+height = 720
+number_blocks_x = int(width/size_block)
+number_blocks_y = int(height/size_block)
 
 def closest_grid(position):
 	posx = position[0]
@@ -14,7 +15,7 @@ def closest_grid(position):
 	return grid
 
 def conways_game():
-	new_grid = [[0 for x in range(number_blocks)] for x in range(number_blocks)] 
+	new_grid = [[0 for x in range(number_blocks_x)] for x in range(number_blocks_y)] 
 	def number_neighbours(index):
 		lst = []
 		number_of_living = 0
@@ -51,13 +52,13 @@ def draw_stuff(grid):
 	for f in range(len(grid)):
 		for x in range(len(grid[0])):
 			if grid[f][x] == 1:
-				(pygame.draw.rect(screen, (((x/number_blocks)*255), ((f/number_blocks)*(f/number_blocks)*255), ((f/number_blocks)*255)), [x*size_block, f*size_block, size_block, size_block]))
+				(pygame.draw.rect(screen, (((x/number_blocks_x)*255), ((f/number_blocks_y)*(f/number_blocks_y)*255), ((f/number_blocks_y)*255)), [x*size_block, f*size_block, size_block, size_block]))
 
 pygame.init()
 Clock = pygame.time.Clock()
 screen = pygame.display.set_mode((width, height))
 pygame.display.set_caption("Game of Life")
-grid_base = [[0 for x in range(number_blocks)] for x in range(number_blocks)]
+grid_base = [[0 for x in range(number_blocks_x)] for x in range(number_blocks_y)]
 is_drawing = True
 is_living = False
 
